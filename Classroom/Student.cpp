@@ -32,35 +32,35 @@ float Student::getAverageMark() {
 	return (marks.size() > 0) ? (averageMark / marks.size()) : 0;
 }
 float Student::getAverageMark(string lesson) {
-	float averageMark = 0;
+	float markSum = 0;
 	int markCount = 0;
 	for (int i = 0; i < marks.size(); i++) {
 		if (marks[i].getLesson() == lesson) {
-			averageMark += marks[i].getMark();
+			markSum += marks[i].getMark();
 			markCount++;
 		}
 	}
-	return (markCount > 0) ? (averageMark / markCount) : 0;
+	return (markCount > 0) ? (markSum / markCount) : 0;
 }
 float Student::getAverageMark(int turn) {
-	float averageMark = 0;
+	float markSum = 0;
 	int markCount = 0;
 	for (int i = 0; i < marks.size(); i++) {
 		if (marks[i].getTurn() == turn) {
-			averageMark += marks[i].getMark();
+			markSum += marks[i].getMark();
 			markCount++;
 		}
 	}
-	return (markCount > 0) ? (averageMark / markCount) : 0;
+	return (markCount > 0) ? (markSum / markCount) : 0;
 }
 float Student::getAverageMark(string lesson, int turn) {
-	float averageMark = 0;
+	float markSum = 0;
 	int markCount = 0;
 	for (int i = 0; i < marks.size(); i++) {
 		if (marks[i].getLesson() == lesson && marks[i].getTurn() == turn) {
-			averageMark += marks[i].getMark();
+			markSum += marks[i].getMark();
 			markCount++;
 		}
 	}
-	return (markCount > 0) ? (averageMark / markCount) : 0;
+	return (markCount > 0) ? (markSum / markCount) : 0;
 }
