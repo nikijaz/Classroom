@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 using std::string;
 
@@ -15,14 +14,13 @@ private:
 	static const int MAX_MARK = 10;
 public:
 	Mark(string lesson, int turn, int mark);
-	
+
 	string getLesson();
 	void setLesson(string lesson);
-	
+
 	int getTurn();
 	void setTurn(int turn);
-	
+
 	int getMark();
 	void setMark(int mark);
-	
 };

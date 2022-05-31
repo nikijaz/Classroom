@@ -1,5 +1,4 @@
 #pragma once
-
 #include <vector>
 using std::vector;
 #include "Mark.h"
@@ -15,7 +14,7 @@ public:
 	Student(string name, int age, char sex);
 	Student(string name, int age, char sex, vector<Mark> marks);
 	~Student();
-	
+
 	string getName();
 	void setName(string name);
 
