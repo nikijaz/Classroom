@@ -13,6 +13,7 @@ private:
 public:
 	Group(int number, char letter);
 	Group(int number, char letter, vector<Student> students);
+	~Group();
 
 	int getNumber();
 	void setNumber(int number);

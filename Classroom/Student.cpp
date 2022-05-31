@@ -12,6 +12,7 @@ Student::Student(string name, int age, char sex, vector<Mark> marks) {
 	this->sex = sex;
 	this->marks = marks;
 }
+Student::~Student() { marks.clear(); }
 
 string Student::getName() { return name; }
 void Student::setName(string name) { this->name = name; }

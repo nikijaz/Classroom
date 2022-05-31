@@ -14,6 +14,7 @@ private:
 public:
 	Student(string name, int age, char sex);
 	Student(string name, int age, char sex, vector<Mark> marks);
+	~Student();
 	
 	string getName();
 	void setName(string name);

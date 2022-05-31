@@ -10,6 +10,7 @@ Group::Group(int number, char letter, vector<Student> students) {
 	this->letter = letter;
 	this->students = students;
 }
+Group::~Group() { students.clear(); }
 
 int Group::getNumber() { return number; }
 void Group::setNumber(int number) {
